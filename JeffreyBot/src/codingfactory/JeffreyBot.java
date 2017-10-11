@@ -27,7 +27,7 @@ public class JeffreyBot {
             return;
         }
 
-        IDiscordClient cli = BotUtils.getBuiltDiscordClient("MzY3NjE5NDUyOTAyMDQ3NzQ0.DL_nMw.M3tHFBZuME908ItU9D707TmP-hk");
+        IDiscordClient cli = BotUtils.getBuiltDiscordClient(args[0]);
 
         
         // Commented out as you don't really want duplicate listeners unless you're intentionally writing your code 
