@@ -57,7 +57,7 @@ public class MainBot extends ListenerAdapter {
         /*if (args.length < 1) {
             System.out.println("Vieulliez indiquer le token du bot");
         }*/
-        new MainBot("MzY3NjE5NDUyOTAyMDQ3NzQ0.DMIRxg.Kfn_FerZV09XlpF_hV2mHnouh_w");
+        new MainBot(args[0]);
 
     }
     
