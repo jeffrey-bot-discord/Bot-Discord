@@ -10,7 +10,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
             </goals>
             <properties>
-                <exec.args>-classpath %classpath discord.codingfactory.jeffreybot.MainBot MzY3NjE5NDUyOTAyMDQ3NzQ0.DMIRxg.Kfn_FerZV09XlpF_hV2mHnouh_w</exec.args>
+                <exec.args>-classpath %classpath discord.codingfactory.jeffreybot.MaintBot MzY3NjE5NDUyOTAyMDQ3NzQ0.DMLCDw.TMYl746B_ED35BzdcRbhcdqj_nk</exec.args>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
@@ -24,7 +24,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath discord.codingfactory.jeffreybot.MainBot MzY3NjE5NDUyOTAyMDQ3NzQ0.DMIRxg.Kfn_FerZV09XlpF_hV2mHnouh_w</exec.args>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath discord.codingfactory.jeffreybot.MaintBot MzY3NjE5NDUyOTAyMDQ3NzQ0.DMLCDw.TMYl746B_ED35BzdcRbhcdqj_nk</exec.args>
                 <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
             </properties>
@@ -39,7 +39,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
             </goals>
             <properties>
-                <exec.args>-classpath %classpath discord.codingfactory.jeffreybot.MainBot MzY3NjE5NDUyOTAyMDQ3NzQ0.DMIRxg.Kfn_FerZV09XlpF_hV2mHnouh_w</exec.args>
+                <exec.args>-classpath %classpath discord.codingfactory.jeffreybot.MaintBot MzY3NjE5NDUyOTAyMDQ3NzQ0.DMLCDw.TMYl746B_ED35BzdcRbhcdqj_nk</exec.args>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
