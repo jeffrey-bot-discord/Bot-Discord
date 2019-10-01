@@ -11,11 +11,11 @@ package discord.codingfactory.jeffreybot;
  */
 import javax.security.auth.login.LoginException;
 import java.util.Scanner;
-import net.dv8tion.jda.core.AccountType;
-import net.dv8tion.jda.core.JDA;
-import net.dv8tion.jda.core.JDABuilder;
-import net.dv8tion.jda.core.entities.MessageChannel;
-import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.AccountType;
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.entities.MessageChannel;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 
 public class MainBot extends ListenerAdapter {
@@ -28,7 +28,9 @@ public class MainBot extends ListenerAdapter {
     
     MainBot(String token) throws Exception {
         try {
-            jda = new JDABuilder(AccountType.BOT).setToken(token).addEventListener(new MessageListener()).buildBlocking();
+            JDA jda = new JDABuilder(AccountType.BOT).setToken(token).build().awaitReady();
+            jda.addEventListener(new MessageListener());
+
         } catch (LoginException | InterruptedException e) {
             e.printStackTrace();
             System.out.println("Une erreur est survenue vieulliez verifier le token ou votre connection internet");
