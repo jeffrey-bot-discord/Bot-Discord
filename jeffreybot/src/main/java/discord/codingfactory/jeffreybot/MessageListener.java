@@ -5,10 +5,10 @@
  */
 package discord.codingfactory.jeffreybot;
 
-import net.dv8tion.jda.core.entities.Message;
-import net.dv8tion.jda.core.entities.MessageChannel;
-import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.api.entities.MessageChannel;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 /**
  *
@@ -22,7 +22,7 @@ public class MessageListener extends ListenerAdapter {
         }
         // We don't want to respond to other bot accounts, including ourself
         Message message = event.getMessage();
-        String content = message.getRawContent();
+        String content = message.getContentRaw();
         // getRawContent() is an atomic getter
         // getContent() is a lazy getter which modifies the content for e.g. console view (strip discord formatting)
         if (content.equals("!ping")) {
